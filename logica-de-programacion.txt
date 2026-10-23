@@ -1,0 +1,20 @@
+La lógica de programación es la capacidad de analizar un problema, descomponerlo en pasos ordenados y crear un algoritmo (una secuencia de instrucciones) que una computadora pueda entender y ejecutar.
+No depende de un lenguaje de programación específico; la forma de razonar y resolver el problema es universal, y lo único que cambia entre lenguajes es la sintaxis.
+
+Conceptos fundamentales
+
+• Algoritmo: La serie de pasos ordenados y sin ambigüedades para resolver un problema.
+• Variables: Espacios en la memoria para almacenar datos que pueden cambiar durante la ejecución del programa.
+• Constantes: Datos o valores fijos que no cambian mientras el programa corre.
+• Operadores: Elementos para realizar operaciones matemáticas (+, -, *, /) o lógicos (&& que significa "y", || que significa "o", ! que significa "no").
+• Estructuras de control: Regulan el flujo del programa:
+	• Secuencial: Las instrucciones se ejecutan una tras otra en orden.
+	• Condicional (Decisión): El programa toma caminos distintos según se cumpla o no una regla (por ejemplo, si ocurre esto, haz aquello; sino, haz otra cosa).
+	• Repetición (Bucles / Loops): Bloques de código que se ejecutan varias veces mientras o hasta que se cumpla una condición (por ejemplo, mientras o para).
+
+Cómo mejorar tu lógica de programación
+
+• Desglosa los problemas: Antes de escribir código en la pantalla, toma lápiz y papel y responde: ¿Qué datos recibe el programa? ¿Qué proceso deben seguir? ¿Qué resultado debe entregar?
+• Practica con ejercicios pequeños: Inicia con problemas sencillos (como saber si un número es par o impar, ordenar una lista o crear una calculadora básica) y aumenta la dificultad poco a poco.
+• Lee código de otros: Analizar cómo resolvieron un problema otros desarrolladores te ayuda a descubrir patrones y nuevas formas de pensar.
+• Consulta comunidades y recursos: Puedes guiarte a través de discusiones en espacios como Reddit chileIT para conocer experiencias y consejos de otros estudiantes.

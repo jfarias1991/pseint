@@ -1,0 +1,18 @@
+PSeInt es una herramienta educativa de software libre diseñada principalmente para asistir a estudiantes en sus primeros pasos en programación. Desarrollado por Pablo Novara, este programa utiliza un pseudolenguaje en español sencillo e intuitivo que permite centrarse en los conceptos fundamentales de la lógica de algoritmos sin las complicaciones de la sintaxis estricta de un lenguaje real.
+
+Características Principales
+
+• Entorno en Español: Ideal para hispanohablantes, ya que emplea palabras clave legibles como Algoritmo, Escribir, Leer y FinAlgoritmo.
+• Flexibilidad Configurable: Permite ajustar las reglas de sintaxis desde un modo flexible hasta un modo estricto (que imita las restricciones de los lenguajes de programación reales).
+• Herramientas Visuales: Es capaz de generar y editar diagramas de flujo de forma automática a partir del pseudocódigo escrito.
+• Ejecución e Interpretación: Permite probar el algoritmo directamente, ejecutarlo paso a paso para ver cómo cambian las variables o identificar errores de lógica.
+• Exportación de Código: Puede convertir automáticamente el pseudocódigo a código real en múltiples lenguajes como C++, Python, Java, JavaScript, entre otros.
+• Multiplataforma: Cuenta con versiones oficiales e instaladores para Windows, Linux y Mac, además de alternativas como PSeInt Web para programar online de forma directa.
+
+Estructura Básica de un Programa
+
+Un ejemplo clásico para mostrar un texto en pantalla se escribe de la siguiente manera:
+pseint
+Algoritmo Saludo
+    Escribir "¡Hola, mundo!"
+FinAlgoritmo

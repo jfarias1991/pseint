@@ -1,0 +1,20 @@
+Un algoritmo es un conjunto ordenado, finito y preciso de instrucciones o pasos lógicos que permite resolver un problema o realizar una tarea.
+
+Estructura básica
+
+• Entrada (Input): Los datos o elementos iniciales necesarios para arrancar el proceso.
+• Proceso: La secuencia de operaciones lógicas y matemáticas que transforman la entrada.
+• Salida (Output): El resultado final o la solución obtenida.
+
+Características principales
+
+• Finito: Debe tener un inicio y un final claros tras un número contado de pasos.
+• Preciso: Cada instrucción tiene que ser exacta y no dejar lugar a ambigüedades.
+• Ordenado: Los pasos se siguen en una secuencia lógica específica.
+
+Tipos comunes y ejemplos
+
+• Cotidianos: Una receta de cocina, cambiar un neumático o las instrucciones de un manual de usuario.
+• Matemáticos: El algoritmo de Euclides para el máximo común divisor o las operaciones aritméticas básicas.
+• Informáticos y de programación: Conjuntos de código previos a la ejecución en una máquina para procesar datos.
+• En redes sociales y plataformas: Sistemas que analizan el comportamiento, interacciones y preferencias del usuario (como los de TikTok o YouTube) para recomendar contenido personalizado.

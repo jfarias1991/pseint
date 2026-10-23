@@ -1,0 +1,30 @@
+El pseudocódigo es una descripción abstracta y simplificada de un algoritmo que utiliza una mezcla de lenguaje natural y elementos propios de los lenguajes de programación.
+
+Características principales
+
+• No es ejecutable: Las computadoras no pueden correrlo directamente; sirve como una herramienta de planificación para humanos.
+• Independiente del lenguaje: Permite diseñar la lógica sin preocuparse por la sintaxis estricta de lenguajes como Python, Java o C++.
+• Fácil de leer: Emplea estructuras lógicas claras para que cualquier persona pueda entender el flujo del programa.
+
+Estructura y elementos básicos
+
+• Inicio y fin: Marcan el principio y el final de la secuencia de instrucciones.
+• Variables y tipos: Se declaran espacios para almacenar datos (como enteros, reales, cadenas o valores lógicos).
+• Operadores: Se usan signos para operaciones aritméticas (+, -, *, /), comparaciones (=, <, >) y lógica (Y, O, NO).
+• Estructuras de control:
+	• Secuenciales: Instrucciones una tras otra.
+	• Condicionales: Decisiones con SI / ENTONCES / SINO.
+	• Repetitivas (bucles): Ciclos como MIENTRAS, REPETIR-HASTA o PARA.
+
+Ejemplo sencillo
+
+text
+Algoritmo SumarDosNumeros
+    Definir num1, num2, suma Como Entero
+    Escribir "Ingresa el primer número:"
+    Leer num1
+    Escribir "Ingresa el segundo número:"
+    Leer num2
+    suma ← num1 + num2
+    Escribir "La suma es: ", suma
+FinAlgoritmo

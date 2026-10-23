@@ -1,0 +1,18 @@
+Los operadores aritméticos son símbolos que permiten realizar cálculos matemáticos (como sumar, restar, multiplicar o dividir) entre números o variables en matemáticas y programación.
+
+Operadores principales
+
+• Suma (+): Junta dos valores o números (ejemplo: 5 + 3 = 8).
+• Resta (-): Saca un valor de otro (ejemplo: 10 - 4 = 6).
+• Multiplicación (*): Multiplica dos valores (ejemplo: 4 * 2 = 8).
+• División (/): Divide el primer número entre el segundo (ejemplo: 10 / 2 = 5).
+• Módulo o Resto (%): Devuelve el sobrante de una división entera (ejemplo: 10 % 3 = 1).
+• Exponente (** o ^): Eleva un número a la potencia de otro (ejemplo: 2 ** 3 = 8).
+
+Orden de prioridad (Jerarquía)
+
+Cuando una operación tiene varios símbolos, se resuelven en el siguiente orden:
+1. Paréntesis () (lo que está dentro se calcula primero)
+2. Exponentes o potencias ** / ^
+3. Multiplicaciones *, divisiones / y módulo %
+4. Sumas + y restas - (de izquierda a derecha)

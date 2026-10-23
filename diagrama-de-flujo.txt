@@ -1,0 +1,23 @@
+Un diagrama de flujo (o flujograma) es la representación gráfica de un algoritmo, proceso o sistema que utiliza formas geométricas estandarizadas conectadas por flechas.
+
+Símbolos principales
+
+• Óvalo: Indica el inicio o el fin del proceso.
+• Rectángulo: Representa una acción, tarea o proceso a ejecutar.
+• Rombo: Marca un punto de decisión (generalmente genera dos caminos, como Sí / No o Verdadero / Falso).
+• Paralelogramo: Señala la entrada o salida de datos o información.
+• Líneas y flechas: Indican la dirección y secuencia en la que fluye el proceso.
+
+Para qué sirve
+
+• Documentar procesos: Ayuda a estandarizar y registrar las operaciones de una empresa o equipo.
+• Identificar errores: Permite visualizar cuellos de botella, pasos innecesarios o fallos lógicos.
+• Facilitar la programación: Sirve como base visual antes de escribir código en un lenguaje de programación.
+• Capacitar personal: Acorta los tiempos de aprendizaje al mostrar claramente el rol de cada persona en una tarea.
+
+Tipos comunes
+
+• Diagrama de proceso: El más básico; traza el orden general de las operaciones de un proyecto.
+• Diagrama de flujo de trabajo (Workflow): Enfocado en asignar tareas estandarizadas dentro de una organización.
+• Diagrama de carriles (Swimlane): Divide las responsabilidades en columnas o filas según el departamento o persona encargada.
+• Diagrama de decisiones: Utilizado para evaluar múltiples opciones y sus posibles consecuencias.
