@@ -1,0 +1,42 @@
+Para mostrar texto en la consola de PSeInt se utiliza el comando Escribir. Todo texto o mensaje literal que quieras desplegar debe ir estrictamente entre comillas (ya sean dobles "" o simples '').
+Aquí tienes los escenarios principales para usarlo:
+
+1. Mostrar un texto simple
+
+pseint
+Algoritmo MostrarTexto
+    Escribir "Hola Mundo, este es un texto en consola"
+FinAlgoritmo
+Usa el código con precaución.
+
+2. Mostrar el valor de una variable
+
+Si no usas comillas, PSeInt buscará el valor que esté guardado dentro de una variable.
+pseint
+Algoritmo MostrarVariable
+    Definir edad Como Entero
+    edad <- 25
+    Escribir edad
+FinAlgoritmo
+Usa el código con precaución.
+
+3. Combinar texto y variables (Concatenar)
+
+Puedes mezclar mensajes fijos con variables en la misma línea separándolos por una coma (,).
+pseint
+Algoritmo CombinarDatos
+    Definir nombre Como Caracter
+    nombre <- "Carlos"
+    Escribir "Bienvenido al sistema, ", nombre, ". ¡Un gusto saludarte!"
+FinAlgoritmo
+Usa el código con precaución.
+
+4. Mostrar texto sin dar un salto de línea
+
+Por defecto, cada instrucción Escribir hace un salto de línea automático. Si quieres que el siguiente texto aparezca inmediatamente al lado, usa la variante Escribir Sin Saltar:
+pseint
+Algoritmo TextoContinuo
+    Escribir Sin Saltar "Ingresa tu "
+    Escribir "respuesta aquí."
+    // El resultado en consola será: Ingresa tu respuesta aquí.
+FinAlgoritmo

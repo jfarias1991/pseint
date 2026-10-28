@@ -1,0 +1,44 @@
+como recibir datos de consola pseint
+10:41 p. m.
+Para recibir datos desde la consola en PSeInt, debes utilizar la instrucción clave Leer, la cual detiene la ejecución del programa y espera a que el usuario introduzca un valor mediante el teclado y presione Enter.
+
+💻 El patrón estándar: Definir, Solicitar y Leer
+
+La forma correcta y más ordenada de capturar datos sigue estos tres pasos obligatorios:
+1. Definir la variable: Crea el contenedor y especifica qué tipo de información va a guardar (Entero, Real, Carácter, Cadena o Lógico).
+2. Mostrar un mensaje (Solicitar): Usa Escribir para indicarle al usuario qué es lo que debe ingresar; de lo contrario, la consola se quedará en blanco y el usuario no sabrá qué hacer.
+3. Leer el dato: Captura lo que se teclee dentro de la variable previamente definida.
+
+Ejemplo de Código Completo
+
+pseint
+Algoritmo CapturaDeDatos
+    // 1. Definir las variables con sus respectivos tipos
+    Definir nombre Como Cadena
+    Definir edad Como Entero
+    
+    // 2. Pedir el primer dato
+    Escribir "Por favor, ingresa tu nombre:"
+    // 3. Recibir el dato de la consola
+    Leer nombre
+    
+    // Pedir el segundo dato
+    Escribir "Ingresa tu edad:"
+    Leer edad
+    
+    // Mostrar el resultado final en la terminal
+    Escribir "Hola ", nombre, ", tu edad es de ", edad, " años."
+FinAlgoritmo
+Usa el código con precaución.
+
+⚡ Trucos y variantes útiles
+
+• Leer múltiples datos en una sola línea: Puedes recibir varios valores de golpe separando las variables con comas. El usuario deberá presionar Enter después de cada dato en la consola:pseint
+Escribir "Ingresa dos números separados por un Enter:"
+Leer num1, num2
+Usa el código con precaución.
+• Evitar el salto de línea al preguntar: Si usas la variante Escribir Sin Saltar, la consola te permitirá escribir la respuesta justo al lado de la pregunta en la misma línea, en lugar de abajo.pseint
+Escribir "Escribe tu ciudad sin saltar: "
+Leer ciudad
+Usa el código con precaución.
+⚠️ Nota importante sobre errores: Si definiste una variable como Entero e intentas ingresar letras por la consola, PSeInt detendrá el programa lanzando un error de coincidencia de tipos. Asegúrate siempre de que el dato ingresado coincida con la naturaleza de tu variable.
