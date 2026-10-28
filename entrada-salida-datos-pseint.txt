@@ -1,0 +1,49 @@
+
+entrada y salida de datos pseint
+
+En PSeInt, la interacción con el usuario se gestiona mediante dos comandos fundamentales: Leer para la entrada de datos y Escribir para la salida de datos. Estos comandos permiten introducir información externa en el programa y mostrar los resultados en pantalla.
+
+1. Salida de Datos (Escribir)
+
+El comando Escribir proyecta información en la pantalla (consola). Se puede usar para mostrar mensajes estáticos, valores almacenados en variables o resultados de operaciones matemáticas.
+• Texto literal: Debe colocarse estrictamente entre comillas dobles (" ").
+• Concatenación: Para mostrar texto fijo junto a una variable en una sola línea, se separan mediante una coma (,).
+Ejemplo básico:
+pseint
+Escribir "Hola, bienvenido al programa."
+Escribir "El resultado es: ", resultado
+Usa el código con precaución.
+
+2. Entrada de Datos (Leer)
+
+El comando Leer detiene la ejecución del programa momentáneamente y espera a que el usuario introduzca un valor a través del teclado. Una vez que el usuario presiona la tecla Enter, ese valor se almacena en la variable especificada.
+• Buenas prácticas: Siempre se debe colocar un comando Escribir justo antes de un Leer para dar contexto e indicarle al usuario qué dato se espera que ingrese.
+• Múltiples lecturas: Es posible leer más de una variable en una misma línea separándolas por comas.
+Ejemplo básico:
+pseint
+Escribir "Por favor, ingresa tu edad:"
+Leer edad
+Usa el código con precaución.
+
+Ejemplo Completo Integrado
+
+El siguiente algoritmo demuestra cómo se combinan la definición de variables, la salida de instrucciones en pantalla, la captura de datos y la muestra del resultado final:
+pseint
+Algoritmo SumarDosNumeros
+    // 1. Definición de variables (Recomendado)
+    Definir num1, num2, resultado Como Entero
+    
+    // 2. Entrada de datos para el primer número
+    Escribir "Introduce el primer número entero:"
+    Leer num1
+    
+    // 3. Entrada de datos para el segundo número
+    Escribir "Introduce el segundo número entero:"
+    Leer num2
+    
+    // Proceso interno
+    resultado <- num1 + num2
+    
+    // 4. Salida de datos con el resultado final
+    Escribir "La suma de ", num1, " más ", num2, " es igual a: ", resultado
+FinAlgoritmo
