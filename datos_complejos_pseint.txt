@@ -1,0 +1,89 @@
+Los datos complejos o compuestos se gestionan mediante dos estructuras fundamentales: Arreglos (Vectores/Matrices) y Estructuras (Registros).
+
+1. Arreglos (Dimensiones)
+
+Permiten almacenar una colección de múltiples datos del mismo tipo bajo un único nombre. Se accede a cada elemento mediante un índice numérico (que por defecto en PSeInt empieza en 1).
+• Vectores (Unidimensionales): Una lista simple de elementos.psc
+Definir notas Como Real
+Dimension notas[5] // Crea una lista para 5 notas
+notas[1] <- 6.5
+notas[2] <- 7.0
+Usa el código con precaución.
+• Matrices (Bidimensionales): Tablas organizadas en filas y columnas.psc
+Definir tablero Como Entero
+Dimension tablero[3,3] // Matriz de 3 filas por 3 columnas
+tablero[1,1] <- 0
+Usa el código con precaución.
+
+2. Estructuras (Registros)
+
+Nota: Esta característica requiere que PSeInt esté configurado en el perfil Flexible.
+Permiten agrupar múltiples datos de diferentes tipos bajo un mismo nombre, simulando un objeto o un "tipo de dato personalizado".
+psc
+// Definición de la estructura
+Estructura Alumno
+    Definir nombre Como Caracter
+    Definir edad Como Entero
+    Definir promedio Como Real
+FinEstructura
+
+Algoritmo DatosComplejos
+    // Crear una variable de tipo Estructura
+    Definir estudiante Como Alumno
+    
+    // Asignar datos usando el operador punto (.)
+    estudiante.nombre <- "Carlos"
+    estudiante.edad <- 20
+    estudiante.promedio <- 5.8
+FinAlgoritmo
+
+
+datos colecciones pseint
+
+En PSeInt, el término colecciones no se refiere a estructuras dinámicas avanzadas (como Lists, Sets o Maps de Java o Python), ya que es un software educativo lineal. En su lugar, las colecciones de datos se implementan exclusivamente a través de Arreglos (Dimensiones).
+Un arreglo es una colección indexada de elementos que, en el caso de PSeInt, deben ser del mismo tipo de dato.
+A continuación, te muestro cómo se definen y manejan las colecciones (arreglos) en PSeInt:
+
+1. Colecciones Unidimensionales (Vectores o Listas)
+
+Representan una lista simple de elementos de forma lineal.
+psc
+Algoritmo ColeccionLineal
+    // 1. Declarar el tipo de dato que tendrá la colección
+    Definir nombres Como Caracter
+    
+    // 2. Establecer el tamaño de la colección (ej. 3 elementos)
+    Dimension nombres[3]
+    
+    // 3. Llenar la colección (Por defecto en PSeInt los índices empiezan en 1)
+    nombres[1] <- "Ana"
+    nombres[2] <- "Pedro"
+    nombres[3] <- "Luis"
+    
+    // 4. Recorrer la colección para mostrar los datos
+    Para i <- 1 Hasta 3 Con Paso 1 Hacer
+        Escribir "Posición ", i, ": ", nombres[i]
+    FinPara
+FinAlgoritmo
+Usa el código con precaución.
+
+2. Colecciones Bidimensionales (Matrices o Tablas)
+
+Representan colecciones organizadas en filas y columnas.
+psc
+Algoritmo ColeccionBidimensional
+    Definir matriz Como Entero
+    Dimension matriz[2,3] // 2 filas y 3 columnas
+    
+    // Asignar un valor a una celda específica (Fila 1, Columna 2)
+    matriz[1,2] <- 50
+    
+    Escribir "El valor guardado es: ", matriz[1,2]
+FinAlgoritmo
+Usa el código con precaución.
+
+⚠️ Limitaciones importantes de las colecciones en PSeInt
+
+• Tamaño Estático: Debes definir el tamaño máximo de la dimensión antes de usarla. No puedes agrandarla o achicarla dinámicamente durante la ejecución del programa.
+• Homogeneidad: Todos los datos dentro de la colección deben ser del mismo tipo (Entero, Real, Caracter o Logico). No puedes mezclar texto con números en el mismo arreglo.
+Si requieres colecciones más complejas (como una lista de estudiantes donde mezcles nombres y notas), debes utilizar el concepto de Estructuras (Registros) combinado con arreglos en el Perfil Flexible. Puedes ver casos de estudio prácticos en la web de PSeInt.

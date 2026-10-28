@@ -1,0 +1,45 @@
+
+variables pseint
+
+En PSeInt, una variable es un espacio en memoria diseñado para almacenar datos que pueden cambiar durante la ejecución de un programa.
+
+1. Tipos de datos permitidos
+
+Cada variable tiene un tipo asociado que restringe el tipo de información que puede almacenar:
+• Entero: Números enteros, ya sean positivos o negativos (ej. 25, -10).
+• Real: Números con decimales (ej. 3.14, -0.5).
+• Caracter o Cadena: Texto, palabras o letras encerradas entre comillas (ej. "Hola Mundo", "A").
+• Logico: Valores booleanos que solo pueden ser Verdadero o Falso.
+
+2. Cómo declarar variables
+
+Para declarar o crear una variable se utiliza la palabra reservada Definir seguida del nombre, la palabra Como y el tipo de dato. Si tienes varias variables del mismo tipo, puedes agruparlas separándolas por comas.
+pseint
+Algoritmo EjemploVariables
+    // Declaración individual
+    Definir edad Como Entero;
+    Definir precio Como Real;
+    
+    // Declaración múltiple en una sola línea
+    Definir nombre, apellido Como Caracter;
+    Definir esMayorDeEdad Como Logico;
+FinAlgoritmo
+Usa el código con precaución.
+⚠️ Nota sobre los perfiles: En el perfil Flexible de PSeInt, la declaración explícita con Definir es opcional, ya que el programa puede deducir el tipo automáticamente. Sin embargo, en el perfil Estricto es obligatorio declararlas antes de usarlas.
+
+3. Asignación de valores e inicialización
+
+Una vez definida, puedes guardar datos en la variable utilizando el operador de asignación <- (formado por un signo menor que < y un guion -) o el signo igual =.
+pseint
+edad <- 20;
+precio = 15.50;
+nombre <- "Carlos";
+esMayorDeEdad <- Verdadero;
+Usa el código con precaución.
+
+4. Reglas para nombrar variables
+
+Para que PSeInt valide correctamente tus identificadores, debes seguir estas normas básicas:
+• Deben comenzar siempre con una letra (pueden llevar números después, pero nunca al principio).
+• No pueden contener espacios en blanco. Si necesitas separar palabras, usa un guion bajo (ej. precio_total).
+• No puedes usar palabras reservadas del software como nombres de variables (ej. Definir, Escribir, Leer, Si, Mientras).

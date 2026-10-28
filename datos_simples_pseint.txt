@@ -1,0 +1,14 @@
+En PSeInt, los tipos de datos simples (o primitivos) representan un único valor a la vez y se dividen en cuatro categorías principales:
+• Entero: Almacena números sin decimales (positivos, negativos o el cero). Ejemplo: 10, -5, 0.
+• Real: Almacena números con decimales (el punto se usa como separador decimal). Ejemplo: 3.14, -0.5, 20.8.
+• Carácter / Cadena: Almacena texto, letras, números o símbolos encerrados entre comillas (simples o dobles). Ejemplo: "Hola", 'A', "1234".
+• Lógico (o Booleano): Almacena únicamente dos valores de verdad: Verdadero o Falso (también aceptados a veces como V o F).
+
+Sintaxis para declarar variables
+
+Para indicar qué tipo de dato va a guardar una variable en PSeInt, se utiliza la instrucción Definir:
+psc
+Definir edad Como Entero
+Definir altura Como Real
+Definir nombre Como Caracter
+Definir activo Como Logico

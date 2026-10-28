@@ -1,0 +1,27 @@
+Los comandos principales de PSeInt se organizan por estructura y función:
+
+Estructura general del algoritmo
+
+• Proceso [Nombre] y FinProceso: delimitan el inicio y el fin del pseudocódigo (también se puede usar Algoritmo y FinAlgoritmo).
+
+Declaración de variables y asignación
+
+• Definir <variable> Como <Tipo>;: declara el tipo de dato (Entero, Real, Logico, Caracter).
+• <variable> <- <expresión>;: asigna un valor o el resultado de una operación a una variable.
+• Dimension <variable>(<max1>);: define un arreglo o vector con un tamaño máximo.
+
+Entrada y salida de datos
+
+• Escribir <expresión>;: muestra textos (entre comillas) o el valor de variables en la pantalla.
+• Leer <variable>;: captura el valor ingresado por el teclado por el usuario y lo guarda en la variable.
+
+Estructuras de condición
+
+• Si <condición> Entonces ... Sino ... FinSi: ejecuta un bloque de instrucciones si la condición es verdadera, y otro bloque opcional si es falsa.
+• Segun <variable> Hacer ... De Otro Modo ... FinSegun: evalúa múltiples posibles valores para una misma variable.
+
+Estructuras repetitivas (bucles)
+
+• Mientras <condición> Hacer ... FinMientras: repite el bloque mientras la condición lógica sea verdadera.
+• Repetir ... Hasta Que <condición>: ejecuta el bloque al menos una vez y se repite hasta que la condición sea verdadera.
+• Para <variable> <- <inicio> Hasta <fin> [Con Paso <paso>] Hacer ... FinPara: repite un bloque un número determinado de veces usando un contador.
