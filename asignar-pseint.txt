@@ -1,0 +1,48 @@
+
+asignar pseint
+
+El comando Asignar en PSeInt se utiliza para almacenar un valor, una variable o el resultado de una operación matemática dentro de una variable.
+
+Sintaxis Principal
+
+La forma estándar y más recomendada para asignar en PSeInt es mediante la flecha (<-):
+text
+variable <- expresion;
+Usa el código con precaución.
+• Variable: El nombre del espacio de memoria donde guardarás el dato.
+• Expresión: El valor, la fórmula matemática o el texto que quieres guardar.
+
+Formas válidas de asignación
+
+Dependiendo de la configuración de tu perfil (Flexible o Estricto), PSeInt acepta tres operadores diferentes:
+
+Operador	Ejemplo	Descripción
+Flecha (<-)	edad <- 25	El estándar oficial del pseudocódigo.
+Igual (=)	edad = 25	Aceptado en configuraciones flexibles.
+Dos puntos igual (:=)	edad := 25	Común en lenguajes como Pascal.
+
+
+Ejemplos Prácticos
+
+1. Asignar un valor directo (número o texto):
+text
+Definir nombre Como Caracter;
+Definir puntos Como Entero;
+
+nombre <- "Carlos";   // El texto siempre va entre comillas
+puntos <- 100;
+Usa el código con precaución.
+2. Asignar el resultado de una operación:
+text
+Definir base, altura, area Como Real;
+base <- 10;
+altura <- 5;
+
+area <- (base * altura) / 2; // Guarda el resultado del cálculo (25)
+Usa el código con precaución.
+3. Modificar o incrementar el valor de una variable (Contador):
+text
+Definir n Como Entero;
+n <- 5;
+
+n <- n + 1; // Toma el 5 actual, le suma 1, y ahora 'n' vale 6
