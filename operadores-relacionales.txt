@@ -1,0 +1,44 @@
+
+operadores relacionales pseint
+
+Los operadores relacionales en PSeInt son símbolos utilizados para comparar dos valores (ya sean numéricos o de texto). El resultado de cualquier comparación relacional siempre devuelve un valor lógico: Verdadero o Falso.
+
+Lista de Operadores Relacionales
+
+
+Operador	Significado	Ejemplo	Resultado
+=	Igual a	5 = 5	Verdadero
+<> o !=	Distinto / Diferente de	5 != 3	Verdadero
+<	Menor que	4 < 8	Verdadero
+>	Mayor que	10 > 20	Falso
+<=	Menor o igual que	7 <= 7	Verdadero
+>=	Mayor o igual que	15 >= 30	Falso
+
+⚠️ Nota importante: En PSeInt, el signo = se utiliza estrictamente para comparar si dos cosas son iguales, mientras que para asignar un valor a una variable se utiliza la flecha <-.
+
+Ejemplo de Código en PSeInt
+
+A continuación, tienes un algoritmo simple que demuestra cómo funcionan estos operadores en consola:
+pseint
+Algoritmo EjemploRelacionales
+    Definir num1, num2 Como Entero
+    num1 <- 10
+    num2 <- 20
+    
+    // Comparaciones directas
+    Escribir "Es num1 igual a num2?: ", num1 = num2       // Devuelve Falso
+    Escribir "Es num1 distinto de num2?: ", num1 != num2  // Devuelve Verdadero
+    Escribir "Es num1 menor que num2?: ", num1 < num2     // Devuelve Verdadero
+    Escribir "Es num1 mayor o igual?: ", num1 >= num2    // Devuelve Falso
+FinAlgoritmo
+Usa el código con precaución.
+
+Uso común: Estructuras condicionales
+
+Normalmente emplearás estos operadores dentro de las instrucciones condicionales Si-Entonces para controlar el flujo de tu programa:
+pseint
+Si num1 < num2 Entonces
+    Escribir "El primer número es menor."
+Sino
+    Escribir "El primer número es mayor o igual."
+FinSi
