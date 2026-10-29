@@ -1,0 +1,49 @@
+El comando Si-Entonces en PSeInt es una estructura de control condicional que permite que el programa tome decisiones y ejecute bloques de código diferentes según el resultado de una expresión lógica (Verdadero o Falso).
+Puedes consultar la guía detallada en Si-Entonces en PSeInt: Sintaxis o revisar más sobre las Estructuras Condicionales en PSeInt.
+
+Sintaxis básica
+
+
+Estructura simple (sin alternativa)
+
+pseint
+Si <condición> Entonces
+    <instrucciones si la condición es verdadera>
+FinSi
+Usa el código con precaución.
+
+Estructura con alternativa (SiNo)
+
+pseint
+Si <condición> Entonces
+    <instrucciones si la condición es verdadera>
+SiNo
+    <instrucciones si la condición es falsa>
+FinSi
+Usa el código con precaución.
+
+Ejemplo práctico: Saber si un número es positivo o negativo
+
+pseint
+Algoritmo PositivoNegativo
+    Definir num Como Entero
+    Escribir "Ingresa un número:"
+    Leer num
+    
+    Si num > 0 Entonces
+        Escribir "El número es positivo"
+    SiNo
+        Escribir "El número es negativo o cero"
+    FinSi
+FinAlgoritmo
+Usa el código con precaución.
+
+Operadores comunes en las condiciones
+
+• Igualdad: == (ejemplo: edad == 18)
+• Diferencia: <> (ejemplo: nombre <> "Juan")
+• Mayor que: > (ejemplo: salario > 1000)
+• Menor que: < (ejemplo: precio < 50)
+• Mayor o igual que: >=
+• Menor o igual que: <=
+• Lógicos: Y, O, NO
