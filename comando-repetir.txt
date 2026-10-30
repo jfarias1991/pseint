@@ -1,0 +1,33 @@
+El comando Repetir en PSeInt es una estructura de control cíclica (do-while) que ejecuta un bloque de instrucciones al menos una vez y luego evalúa una condición al final.
+
+Sintaxis
+
+psc
+Repetir
+    // Secuencia de acciones a ejecutar
+Hasta Que <condición>
+Usa el código con precaución.
+
+Cómo funciona
+
+1. Ejecuta primero: Las instrucciones dentro del bloque se ejecutan.
+2. Pregunta después: Al llegar a Hasta Que, se evalúa la condición lógica.
+3. ¿Qué pasa con la condición?
+	• Si es falsa: El flujo regresa a Repetir y vuelve a ejecutar las instrucciones.
+	• Si es verdadera: El ciclo termina y el programa continúa con la siguiente línea de código.
+Característica clave: A diferencia del comando Mientras, el bucle Repetir siempre garantiza al menos una ejecución del código interno, sin importar si la condición es verdadera desde el inicio.
+
+Ejemplo práctico
+
+Este algoritmo pide un número y no deja de solicitarlo hasta que el usuario escriba un valor de 3 cifras (entre 100 y 999):
+psc
+Algoritmo EjemploRepetir
+    Definir num Como Entero
+    
+    Repetir
+        Escribir "Ingrese un número de 3 cifras:"
+        Leer num
+    Hasta Que num >= 100 y num <= 999
+    
+    Escribir "¡Número correcto ingresado!"
+FinAlgoritmo

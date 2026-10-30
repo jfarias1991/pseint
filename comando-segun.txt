@@ -1,0 +1,46 @@
+El comando Según en PSeInt es una estructura de selección múltiple (equivalente al switch-case en otros lenguajes de programación). Permite evaluar una variable numérica y ejecutar diferentes bloques de código según el valor que contenga.
+
+Sintaxis general
+
+psc
+Segun <variable> Hacer
+    <opción_1>:
+        <acciones_1>
+    <opción_2>:
+        <acciones_2>
+    <opción_N>:
+        <acciones_N>
+    De Otro Modo:
+        <acciones_si_no_coincide>
+FinSegun
+Usa el código con precaución.
+
+Reglas y características principales
+
+• Tipo de variable: Solo acepta variables de tipo numérico (enteros o reales). No funciona directamente con texto/caracteres.
+• De Otro Modo: Es una sección opcional. Se ejecuta si el valor de la variable no coincide con ninguna de las opciones declaradas (similar al default).
+• Uso común: Ideal para crear menús de opciones en un programa (por ejemplo: presiona 1 para sumar, 2 para restar, 3 para salir).
+
+Ejemplo práctico
+
+psc
+Algoritmo MenuOpciones
+    Definir opcion Como Entero
+    
+    Escribir "Elige una opción (1 al 3):"
+    Escribir "1. Saludar"
+    Escribir "2. Despedirse"
+    Escribir "3. Salir"
+    Leer opcion
+    
+    Segun opcion Hacer
+        1:
+            Escribir "¡Hola! Bienvenido."
+        2:
+            Escribir "¡Hasta luego, que estés bien!"
+        3:
+            Escribir "Saliendo del programa..."
+        De Otro Modo:
+            Escribir "Opción no válida. Intenta de nuevo."
+    FinSegun
+FinAlgoritmo

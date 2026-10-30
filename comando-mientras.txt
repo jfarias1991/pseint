@@ -1,0 +1,25 @@
+El comando Mientras en PSeInt es una estructura de repetición (bucle) que ejecuta un bloque de instrucciones de manera repetida mientras una condición lógica sea verdadera.
+
+Sintaxis básica
+
+pseint
+Mientras <condición> Hacer
+    // Secuencia de instrucciones
+FinMientras
+Usa el código con precaución.
+• Primero se evalúa la condición: Si es verdadera, se ejecuta el bloque de instrucciones. Al terminar, el programa vuelve arriba, evalúa otra vez la condición y, si sigue siendo verdadera, repite el proceso.
+• Si la condición es falsa desde el inicio: Las instrucciones dentro del bucle no se ejecutarán ni una sola vez.
+• Bucle infinito: Es fundamental modificar dentro del ciclo alguna de las variables que participan en la condición, de lo contrario la condición nunca cambiará a falsa y el programa se quedará trabado.
+
+Ejemplo práctico
+
+Este algoritmo imprime los números del 1 al 5:
+pseint
+Algoritmo EjemploMientras
+    Definir i Como Entero
+    i <- 1
+    Mientras i <= 5 Hacer
+        Escribir "Número: ", i
+        i <- i + 1 // Incrementa la variable para evitar bucle infinito
+    FinMientras
+FinAlgoritmo
