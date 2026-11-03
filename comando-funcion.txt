@@ -1,0 +1,56 @@
+pseint comando funcion
+10:16 p. m.
+El comando Funcion (o también llamado Subproceso) en PSeInt se utiliza para crear bloques de código independientes y reutilizables que realizan una tarea específica, permitiendo modularizar el programa y evitar la repetición de código.
+En PSeInt, las palabras clave Funcion y Subproceso son completamente equivalentes y se pueden usar indistintamente.
+
+Sintaxis Completa
+
+La estructura general de una función con retorno y parámetros es la siguiente:
+pascal
+Funcion variable_retorno <- NombreDeLaFuncion(parametro1, parametro2, ...)
+    // Cuerpo de la función
+    variable_retorno <- calculo_o_resultado
+FinFuncion
+Usa el código con precaución.
+
+Variaciones de la Estructura
+
+Dependiendo de si necesitas devolver un valor o si requieres datos externos, la estructura se adapta:
+
+Tipo de Función	Sintaxis	Ejemplo de Uso
+Con Retorno y Con Parámetros	Funcion res <- Sumar(a, b)	Para cálculos matemáticos que devuelven un resultado.
+Sin Retorno y Con Parámetros	Funcion SaludarUsuario(nombre)	Actúa como un procedimiento (ej. mostrar un mensaje personalizado).
+Con Retorno y Sin Parámetros	Funcion num <- ObtenerPi()	Devuelve un valor constante o basado en condiciones internas.
+Sin Retorno y Sin Parámetros	Funcion MostrarMenu()	Despliega texto en pantalla de forma limpia sin procesar datos.
+
+
+Ejemplo Práctico Completo
+
+A continuación se muestra un código funcional donde se define una función para calcular el área de un rectángulo y luego se invoca desde el algoritmo principal:
+pascal
+// 1. Definición de la Función (puede ir arriba o abajo del algoritmo principal)
+Funcion area <- CalcularArea(base, altura)
+    Definir area Como Real
+    area <- base * altura
+FinFuncion
+
+// 2. Algoritmo Principal
+Algoritmo EjemploFunciones
+    Definir b, a, resultado Como Real
+    
+    Escribir "Ingrese la base del rectángulo:"
+    Leer b
+    Escribir "Ingrese la altura del rectángulo:"
+    Leer a
+    
+    // Llamada a la función pasando los datos requeridos
+    resultado <- CalcularArea(b, a)
+    
+    Escribir "El área calculada es: ", resultado
+FinAlgoritmo
+Usa el código con precaución.
+
+Aspectos clave a tener en cuenta
+
+• Paso por Valor vs. Referencia: Por defecto, los parámetros se pasan por valor (se genera una copia y la variable original no se modifica). Si deseas modificar la variable original desde dentro de la función, debes anteponer la palabra clave Por Referencia al parámetro.
+• Ubicación: Puedes declarar tus funciones al inicio o al final del archivo, el intérprete de PSeInt las reconocerá de igual manera.

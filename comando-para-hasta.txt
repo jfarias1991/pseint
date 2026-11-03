@@ -1,0 +1,66 @@
+El comando para crear un bucle con contador en PSeInt es la estructura Para (también conocida como Para - Hasta).
+
+Sintaxis básica
+
+text
+Para variable <- valor_inicial Hasta valor_final Con Paso incremento_o_decremento Hacer
+    // Instrucciones que se repiten
+FinPara
+Usa el código con precaución.
+• variable: Es la variable que funciona como contador (suele llamarse i, contador, etc.).
+• valor_inicial: El número con el que empieza el contador.
+• valor_final: El límite (inclusive) hasta el cual se ejecutará el bucle.
+• Con Paso: Indica cuánto aumenta o disminuye el contador en cada vuelta. Nota: Si el paso es de 1 en 1, puedes omitir la parte de "Con Paso 1".
+
+Ejemplo práctico
+
+Este ejemplo imprime los números del 1 al 5 en la pantalla:
+text
+Algoritmo EjemploPara
+    Definir i Como Entero
+    
+    Para i <- 1 Hasta 5 Con Paso 1 Hacer
+        Escribir "Número: ", i
+    FinPara
+    
+FinAlgoritmo
+
+El bucle Para ... Hasta en PSeInt es una estructura repetitiva controlada por un contador que se usa cuando sabes de antemano cuántas veces se va a repetir un bloque de instrucciones.
+
+Sintaxis básica
+
+pseint
+Para variable <- valor_inicial Hasta valor_final [Con Paso incremento_o_decremento] Hacer
+    // Instrucciones a repetir
+FinPara
+Usa el código con precaución.
+• variable: Es la variable numérica que funciona como contador.
+• valor_inicial: El número con el que empieza la variable.
+• valor_final: El límite hasta el cual va a iterar el bucle (inclusive).
+• Con Paso (Opcional): Indica cuánto aumenta o disminuye el contador en cada vuelta. Si no se especifica, PSeInt asume por defecto un paso de 1. Si usas un número negativo, la variable cuenta hacia atrás.
+
+Ejemplo práctico
+
+Un algoritmo sencillo que muestra los números del 1 al 5:
+pseint
+Proceso EjemploPara
+    Definir i Como Entero
+    
+    Para i <- 1 Hasta 5 Hacer
+        Escribir "Número: ", i
+    FinPara
+    
+FinProceso
+Usa el código con precaución.
+
+Ejemplo con "Con Paso" (de 2 en 2):
+
+pseint
+Proceso EjemploPaso
+    Definir i Como Entero
+    
+    Para i <- 2 Hasta 10 Con Paso 2 Hacer
+        Escribir "Valor par: ", i
+    FinPara
+    
+FinProceso

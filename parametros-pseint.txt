@@ -1,0 +1,28 @@
+En PSeInt, los parámetros son los valores o variables que se le pasan a una función o subproceso para que pueda realizar una tarea específica. Sirven como puente entre el algoritmo principal y los bloques de código secundarios.
+
+Tipos de parámetros
+
+1. Parámetros formales: Son las variables que se escriben en la definición del subproceso o función (dentro de los paréntesis). Actúan como variables locales.
+2. Parámetros reales (o argumentos): Son los valores, variables o expresiones que se envían al subproceso cuando se realiza la llamada desde el algoritmo principal.
+
+Formas de paso de parámetros
+
+En PSeInt, los argumentos pueden pasarse de dos maneras:
+• Por valor (por defecto): Se envía una copia del valor original. Si dentro de la función modificas ese parámetro, la variable original del algoritmo principal no cambia.
+• Por referencia: Se antepone la palabra ByRef (o se indica según la configuración del lenguaje). En este caso, la función trabaja directamente con la variable original, por lo que cualquier cambio dentro del subproceso sí afecta a la variable original del programa.
+
+Sintaxis básica de un SubProceso con parámetros
+
+psc
+// Definición del SubProceso
+SubProceso Saludar(nombre)
+    Escribir "Hola, ", nombre
+FinSubProceso
+
+// Algoritmo principal
+Algoritmo EjemploParametros
+    Definir miNombre Como Cadena
+    miNombre <- "Ana"
+    
+    Saludar(miNombre) // "miNombre" es el parámetro real
+FinAlgoritmo
