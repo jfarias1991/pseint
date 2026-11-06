@@ -1,0 +1,36 @@
+En PSeInt, la concatenación es el proceso de unir dos o más cadenas de texto (o elementos mixtos) para formar una sola cadena.
+Puedes realizar la concatenación de varias formas según lo que necesites hacer:
+
+1. Usando la función Concatenar()
+
+La función nativa Concatenar(cadena1, cadena2) une exactamente dos cadenas de texto.
+psc
+Definir nombre, apellido, resultado Como Caracter
+nombre <- "Ana"
+apellido <- " Torres"
+
+resultado <- Concatenar(nombre, apellido)
+Escribir resultado // Muestra: Ana Torres
+Usa el código con precaución.
+• Nota importante: Los espacios no se añaden automáticamente. Debes incluirlos dentro de alguno de los textos (por ejemplo, " Torres" en lugar de "Torres").
+
+2. Usando la coma (,) en el comando Escribir
+
+Si lo que deseas es mostrar textos y variables juntos en la pantalla, puedes separarlos con una coma dentro de la instrucción Escribir. PSeInt se encarga de unirlos visualmente e incluye un espacio por defecto:
+psc
+Definir edad Como Entero
+edad <- 20
+
+Escribir "Tienes ", edad, " años." // Muestra: Tienes  20  años.
+Usa el código con precaución.
+
+3. Mezclar números y texto
+
+Para concatenar un número con una cadena usando la función Concatenar() o asignaciones, primero debes convertir el número a texto usando ConvertirATexto():
+psc
+Definir textoFinal Como Caracter
+Definir edad Como Entero
+edad <- 25
+
+textoFinal <- Concatenar("Mi edad es ", ConvertirATexto(edad))
+Escribir textoFinal

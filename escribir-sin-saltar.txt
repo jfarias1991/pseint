@@ -1,0 +1,82 @@
+En PSeInt, la instrucción Escribir Sin Saltar se utiliza para mostrar texto o variables en la pantalla sin hacer un cambio de línea al terminar.
+
+Sintaxis
+
+pseint
+Escribir Sin Saltar "Texto o expresión";
+Usa el código con precaución.
+
+¿Para qué sirve?
+
+• Evitar saltos de línea automáticos: Normalmente, el comando Escribir baja a la siguiente línea después de mostrar su contenido. Con Sin Saltar, el cursor se queda en la misma línea.
+• Pedir datos en la misma línea (Leer): Es muy común usarlo antes de un comando Leer para que el usuario escriba su respuesta justo al lado del mensaje (por ejemplo: *Escribir Sin Saltar "Ingresa tu edad: "; Leer edad;*).
+• Concatenar salidas en bucles: Se utiliza para imprimir elementos seguidos en una misma fila, como matrices, figuras o menús horizontales.
+
+Ejemplo práctico
+
+pseint
+Proceso EjemploSinSaltar
+    Escribir Sin Saltar "Hola, ";
+    Escribir "Mundo!";
+FinProceso
+Usa el código con precaución.
+Resultado en consola:
+text
+Hola, Mundo!
+
+En PSeInt, la instrucción Escribir Sin Saltar evita que el cursor avance a la línea siguiente después de mostrar un mensaje en la consola. Esto permite que el próximo elemento impreso, o los datos que ingrese el usuario, aparezcan exactamente en la misma línea.
+
+Sintaxis
+
+Tienes dos formas de utilizar esta instrucción en tu pseudocódigo:
+Opción 1 (Modificador continuo):
+text
+Escribir Sin Saltar "Texto o variable";
+Usa el código con precaución.
+Opción 2 (Sintaxis alternativa):
+text
+Escribir "Texto o variable" Sin Saltar;
+Usa el código con precaución.
+
+Casos de uso comunes
+
+
+1. Pedir datos al usuario en la misma línea
+
+Es el uso más frecuente. Evita que el comando Leer mande la respuesta del usuario abajo.
+text
+Algoritmo PedirNombre
+    Definir nombre Como Cadena;
+    
+    Escribir Sin Saltar "Por favor, ingresa tu nombre: ";
+    Leer nombre; // El usuario escribirá aquí mismo
+    
+    Escribir "Hola, ", nombre, ". ¡Bienvenido!";
+FinAlgoritmo
+Usa el código con precaución.
+
+2. Concatenar textos con múltiples instrucciones
+
+Si necesitas construir un mensaje por partes utilizando condiciones u otros procesos.
+text
+Algoritmo ContadorLineal
+    Escribir Sin Saltar "Cargando: ";
+    Escribir Sin Saltar "[";
+    Escribir Sin Saltar "===";
+    Escribir "]"; // Imprime el cierre y salta a la siguiente línea
+FinAlgoritmo
+Usa el código con precaución.
+
+3. Dibujar estructuras o matrices (Ciclos anidados)
+
+Ideal para imprimir figuras geométricas o tablas de datos donde controlas cuándo termina una fila.
+text
+Algoritmo DibujarLinea
+    Definir i Como Entero;
+    
+    Para i <- 1 Hasta 5 Con Paso 1 Hacer
+        Escribir Sin Saltar "* "; // Imprime los asteriscos seguidos
+    FinPara
+    
+    Escribir ""; // Genera un salto de línea manual al terminar el ciclo
+FinAlgoritmo
