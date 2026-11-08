@@ -1,0 +1,59 @@
+Proceso MayorDeTresNumeros
+    Definir num1, num2, num3, mayor Como Entero
+    
+    Escribir "Ingrese el primer número:"
+    Leer num1
+    Escribir "Ingrese el segundo número:"
+    Leer num2
+    Escribir "Ingrese el tercer número:"
+    Leer num3
+    
+    // Evaluamos cuál es el mayor utilizando el conector lógico Y
+    Si (num1 >= num2) Y (num1 >= num3) Entonces
+        mayor <- num1
+    Sino
+        Si (num2 >= num1) Y (num2 >= num3) Entonces
+            mayor <- num2
+        Sino
+            mayor <- num3
+        FinSi
+    FinSi
+    
+    Escribir "El número mayor es: ", mayor
+FinProceso
+
+El algoritmo para encontrar el mayor de tres números funciona mediante una serie de comparaciones condicionales (estructuras si / entonces) que evalúan el valor de cada variable frente a las demás para determinar cuál es el mayor.
+
+Paso a paso de cómo funciona
+
+1. Entrada de datos: Se solicitan y almacenan tres números en tres variables distintas (por ejemplo, num1, num2 y num3, o bien A, B y C).
+2. Asignación inicial (o supuesto): Se guarda el primer número en una variable auxiliar llamada mayor (mayor = num1).
+3. Comparaciones:
+	• Se compara el segundo número (num2) con la variable mayor. Si num2 es mayor, entonces mayor pasa a valer num2.
+	• Se compara el tercer número (num3) con la variable mayor actual. Si num3 es mayor, entonces mayor pasa a valer num3.
+4. Resultado: Al terminar las evaluaciones, el valor almacenado en mayor es impreso o devuelto como el número más grande.
+
+Ejemplo de código en pseudocódigo (PSeInt)
+
+text
+Algoritmo MayorDeTresNumeros
+    Definir num1, num2, num3, mayor Como Real
+    Escribir "Ingrese el primer número:"
+    Leer num1
+    Escribir "Ingrese el segundo número:"
+    Leer num2
+    Escribir "Ingrese el tercer número:"
+    Leer num3
+    
+    mayor <- num1
+    
+    Si num2 > mayor Entonces
+        mayor <- num2
+    FinSi
+    
+    Si num3 > mayor Entonces
+        mayor <- num3
+    FinSi
+    
+    Escribir "El número mayor es: ", mayor
+FinAlgoritmo
