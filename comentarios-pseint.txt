@@ -1,0 +1,42 @@
+Los comentarios en PSeInt son líneas de texto dentro del algoritmo que el programa ignora por completo durante la ejecución; no afectan el resultado final y sirven exclusivamente como notas explicativas para quien lee o escribe el código.
+
+Sintaxis en PSeInt
+
+• Doble barra (//): Todo lo que se escriba después de // en la misma línea se considera un comentario.
+• Pueden colocarse en una línea completa o al final de una instrucción:text
+Algoritmo Ejemplo
+    Definir x Como Entero;
+    x <- 10; // Asignamos el valor 10 a la variable x
+    Escribir x;
+FinAlgoritmo
+Usa el código con precaución.
+
+Para qué sirven
+
+• Documentar: Explicar el propósito de una variable, una fórmula o un bloque de instrucciones complejo.
+• Facilitar la lectura: Ayudar a que otros programadores (o tú mismo en el futuro) entiendan rápidamente la lógica del algoritmo.
+• Desactivar código temporalmente: Ocultar una línea o instrucción sin necesidad de borrarla por completo
+
+text
+Algoritmo comentarios
+    // 1. Declaración de Variables
+    // Definimos las variables como Real para que el usuario pueda sumar decimales si lo desea.
+    // Evitamos duplicar definiciones (antes tenías num1 y num2 como Entero y Real a la vez).
+    Definir num1 Como Real;
+    Definir num2 Como Real;
+    Definir res Como Real; // Cambiado a Real porque la suma de dos reales da un real.
+    
+    // 2. Entrada de Datos
+    Escribir "Ingresa un número para sumar: ";
+    Leer num1;
+    
+    Escribir "Ingresa otro número para sumar: ";
+    Leer num2;
+    
+    // 3. Procesamiento
+    res <- num1 + num2;
+    
+    // 4. Salida de Datos
+    // Agregamos la variable 'res' al final para que el usuario realmente vea el resultado.
+    Escribir "El resultado de la suma es: ", res; 
+FinAlgoritmo
