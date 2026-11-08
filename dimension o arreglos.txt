@@ -1,0 +1,92 @@
+En PSeInt, la instrucción Dimension se utiliza para crear arreglos (vectores y matrices) que permiten almacenar múltiples datos del mismo tipo bajo un mismo identificador.
+Puedes aprender más sobre la base teórica en PSeInt Teoría sobre Arreglos o revisar el manejo de tablas en Arreglos Bidimensionales en PSeInt.
+
+Sintaxis básica
+
+text
+Dimension identificador[tamaño];
+Usa el código con precaución.
+• Identificador: El nombre de la variable de tipo arreglo.
+• Tamaño: Un número entero y positivo que indica la cantidad de elementos (casillas) que se reservan en la memoria.
+
+Tipos de dimensiones
+
+
+1. Arreglos unidimensionales (Vectores)
+
+Tienen una sola dimensión (una lista de elementos).
+• Ejemplo:text
+Dimension vNumero[10]; // Crea un vector con 10 espacios
+Usa el código con precaución.
+
+2. Arreglos bidimensionales (Matrices)
+
+Tienen dos dimensiones organizadas en filas y columnas.
+• Ejemplo:text
+Dimension matriz[3, 5]; // Crea una matriz de 3 filas y 5 columnas
+Usa el código con precaución.
+
+Características importantes en PSeInt
+
+• Inicio de los índices: Por defecto en la configuración estándar de PSeInt, los subíndices (posiciones) de los arreglos empiezan en 1 (a diferencia de lenguajes como C++ o Java que empiezan en 0), aunque esto se puede modificar en las opciones del programa si se usa un perfil compatible con C.
+• Acceso a los elementos: Se utiliza el nombre del arreglo seguido de la posición entre corchetes:text
+vNumero[1] <- 15; // Asigna el valor 15 a la primera posición
+Usa el código con precaución.
+• Uso con ciclos: Es muy común recorrer las dimensiones utilizando bucles Para para asignar o leer datos de forma masiva:text
+Para i <- 1 Hasta 10 Hacer
+    Escribir vNumero[i];
+Fin Para
+
+
+2. Estructuras de datos compuestas (Arreglos)
+
+PSeInt soporta estructuras de datos homogéneas (elementos del mismo tipo) conocidas como arreglos. Se dividen en dos formas principales:
+
+A. Arreglos unidimensionales (Vectores)
+
+Almacenan una lista de elementos del mismo tipo organizados en una sola dimensión.
+• Sintaxis de declaración:psc
+Definir nombreVector Como Entero // (o Real, Caracter, Logico)
+Dimension nombreVector[tamaño]
+Usa el código con precaución.
+• Ejemplo práctico en pseudocódigo:psc
+Proceso EjemploVector
+    Definir numeros Como Entero
+    Dimension numeros[5]
+    Definir i Como Entero
+
+    // Asignar valores
+    Para i <- 1 Hasta 5 Con Paso 1 Hacer
+        numeros[i] <- i * 10
+    FinPara
+
+    // Mostrar valores
+    Para i <- 1 Hasta 5 Con Paso 1 Hacer
+        Escribir "Elemento ", i, ": ", numeros[i]
+    FinPara
+Usa el código con precaución.
+FinProceso
+*(Por defecto en PSeInt, los vectores comienzan en el índice **1**, aunque se puede configurar en las opciones del lenguaje para que inicien en **0**).*
+
+---
+
+#### B. Arreglos bidimensionales (Matrices)
+Almacenan datos en una estructura de tabla con **filas y columnas**.
+
+* **Sintaxis de declaración:**
+```psc
+Definir nombreMatriz Como Entero
+Dimension nombreMatriz[filas, columnas]
+• Ejemplo práctico en pseudocódigo:psc
+Proceso EjemploMatriz
+    Definir matriz Como Entero
+    Dimension matriz[3, 3]
+    Definir f, c Como Entero
+
+    // Recorrer y rellenar matriz
+    Para f <- 1 Hasta 3 Hacer
+        Para c <- 1 Hasta 3 Hacer
+            matriz[f, c] <- f + c
+        FinPara
+    FinPara
+FinProceso
