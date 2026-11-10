@@ -1,0 +1,31 @@
+Para ingresar datos en una dimensión (arreglo) en PSeInt, primero debes definirla y luego utilizar una estructura repetitiva (como el bucle Para) junto con el comando Leer para asignar un valor a cada posición.
+
+Pasos y ejemplo en código
+
+1. Definir el tamaño de la dimensión con la instrucción Dimension.
+2. Usar un bucle Para para recorrer cada índice.
+3. Utilizar Leer dentro del bucle para guardar el dato ingresado por el usuario en cada posición del arreglo.
+Puedes revisar el artículo detallado en Aprendiendo Arreglos Unidimensionales en PSeInt o consultar la guía en Dimension en PSeInt.
+psc
+Algoritmo IngresarDatosDimension
+    Definir i Como Entero
+    Definir num Como Entero
+    
+    // 1. Crear una dimensión de 5 elementos (índices del 1 al 5 por defecto)
+    Dimension num[5] 
+    
+    Escribir "Por favor, ingresa 5 números:"
+    
+    // 2. Recorrer la dimensión para pedir y guardar los datos
+    Para i <- 1 Hasta 5 Con Paso 1 Hacer
+        Escribir "Ingresa el valor para la posición ", i, ":"
+        Leer num[i]
+    FinPara
+    
+    // 3. Mostrar los datos ingresados
+    Escribir "Los datos almacenados son:"
+    Para i <- 1 Hasta 5 Con Paso 1 Hacer
+        Escribir "Posición [", i, "] = ", num[i]
+    FinPara
+    
+FinAlgoritmo
