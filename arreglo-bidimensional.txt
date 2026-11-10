@@ -1,0 +1,54 @@
+Un arreglo bidimensional (o matriz) en PSeInt es una estructura que organiza los datos en forma de tabla con filas y columnas.
+
+1. Declaración y sintaxis básica
+
+Para crear una tabla en PSeInt, debes indicar el nombre del arreglo y el tamaño de sus dimensiones: primero las filas y luego las columnas.
+psc
+Algoritmo ManejoDeTablas
+    Definir i, j Como Entero
+    Definir tabla Como Entero
+    
+    // Declaramos una tabla de 3 filas y 4 columnas
+    Dimension tabla[3, 4]
+FinAlgoritmo
+Usa el código con precaución.
+• Nota sobre índices: Dependiendo de la configuración del perfil de PSeInt, los índices pueden iniciar en 0 o en 1 (por defecto en las versiones modernas suelen iniciar en 1 o ser configurables, aunque conceptualmente filas y columnas se controlan mediante bucles).
+
+2. Llenar (asignar datos) a la tabla
+
+Para recorrer todas las casillas de la tabla y guardar información (por ejemplo, solicitada al usuario o generada de forma automática), se utilizan dos ciclos Para anidados: uno para las filas y otro para las columnas.
+psc
+Algoritmo LlenarTabla
+    Definir i, j Como Entero
+    Definir tabla Como Entero
+    Dimension tabla[3, 3] // Matriz de 3x3
+    
+    // Llenar la matriz
+    Para i = 1 Hasta 3 Hacer
+        Para j = 1 Hasta 3 Hacer
+            Escribir "Ingrese el valor para la posición [", i, ",", j, "]: "
+            Leer tabla[i, j]
+        FinPara
+    FinPara
+FinAlgoritmo
+Usa el código con precaución.
+
+3. Mostrar la tabla en pantalla
+
+Para imprimir los datos con apariencia de tabla (respetando saltos de línea al terminar cada fila), se utiliza el comando Escribir Sin Saltar:
+psc
+Algoritmo MostrarTabla
+    Definir i, j Como Entero
+    Definir tabla Como Entero
+    Dimension tabla[2, 3]
+    
+    // (Asumimos que la tabla ya tiene datos cargados...)
+    
+    Escribir "--- CONTENIDO DE LA TABLA ---"
+    Para i = 1 Hasta 2 Hacer
+        Para j = 1 Hasta 3 Hacer
+            Escribir Sin Saltar tabla[i, j], "  "
+        FinPara
+        Escribir "" // Salto de línea al terminar una fila completa
+    FinPara
+FinAlgoritmo

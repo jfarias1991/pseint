@@ -1,0 +1,24 @@
+En PSeInt, el subíndice (también llamado índice o posición) es el número entero que se utiliza para identificar y acceder a un elemento específico dentro de un arreglo (vector o matriz).
+
+Características principales según el modo de PSeInt
+
+• Modo Flexible (por defecto): Los subíndices empiezan desde el número 1. Si defines un vector de tamaño 10, las posiciones válidas van de 1 hasta 10.
+• Modo Estricto: Los subíndices empiezan desde el número 0 (igual que en lenguajes como C, Java o Python). Si defines un vector de tamaño 5, las posiciones válidas van de 0 hasta 4.
+
+Ejemplo práctico (Modo Flexible)
+
+psc
+Algoritmo EjemploSubindice
+    Definir vNumero Como Entero
+    Dimension vNumero[5]
+    
+    vNumero[1] <- 20
+    vNumero[2] <- 14
+    
+    Escribir "El valor en la posición 1 es: ", vNumero[1]
+FinAlgoritmo
+Usa el código con precaución.
+
+Error común: Subíndice fuera de rango
+
+El Error 302 o Error 303 ocurre cuando tu algoritmo intenta leer o escribir en una posición que no existe (por ejemplo, llamar a vNumero[10] cuando el arreglo solo tiene 5 elementos, o usar el índice 0 estando en modo flexible).
