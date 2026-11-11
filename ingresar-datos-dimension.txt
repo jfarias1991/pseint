@@ -29,3 +29,61 @@ Algoritmo IngresarDatosDimension
     FinPara
     
 FinAlgoritmo
+
+Para ingresar datos en una dimensión (arreglo) en PSeInt, debes declarar su tamaño con la palabra clave Dimension y luego asignar los valores usando su índice entre corchetes [ ]. Por defecto, las posiciones en PSeInt comienzan en 1, aunque pueden configurarse en base 0.
+
+1. Ingreso manual (posición por posición)
+
+Esta forma funciona bien cuando tienes pocos datos fijos y los asignas directamente en el código.
+pseint
+Algoritmo IngresoManual
+    Definir edades Como Entero;
+    Dimension edades[3];
+    
+    edades[1] <- 18;
+    edades[2] <- 25;
+    edades[3] <- 30;
+    
+    Escribir "La segunda edad es: ", edades[2];
+FinAlgoritmo
+Usa el código con precaución.
+
+2. Ingreso por teclado usando un ciclo Para (Vector)
+
+Cuando necesitas que el usuario ingrese varios datos, se utiliza un bucle Para combinado con la instrucción Leer para llenar cada casilla automáticamente.
+pseint
+Algoritmo IngresoConCiclo
+    Definir notas, i Como Entero;
+    Dimension notas[4];
+    
+    Para i <- 1 Hasta 4 Con Paso 1 Hacer
+        Escribir "Ingresa la nota ", i, ":";
+        Leer notas[i];
+    FinPara
+    
+    Escribir "Datos guardados correctamente.";
+FinAlgoritmo
+Usa el código con precaución.
+
+3. Ingreso en arreglos bidimensionales (Matrices)
+
+Para ingresar datos en una tabla con filas y columnas, se definen dos tamaños separados por coma y se utilizan dos ciclos Para anidados.
+pseint
+Algoritmo IngresoMatriz
+    Definir matriz, fila, col Como Entero;
+    Dimension matriz[2, 3]; // 2 filas y 3 columnas
+    
+    Para fila <- 1 Hasta 2 Hacer
+        Para col <- 1 Hasta 3 Hacer
+            Escribir "Ingresa el valor para [", fila, ",", col, "]:";
+            Leer matriz[fila, col];
+        FinPara
+    FinPara
+FinAlgoritmo
+Usa el código con precaución.
+
+Consideraciones clave
+
+• Definición previa. Siempre debes usar Definir para indicar el tipo de dato (Entero, Real, Caracter, Logico) antes o después de declarar la Dimension.
+• Índice inicial. Si tu perfil de PSeInt está configurado en modo estricto o base 0, los bucles deben ir desde 0 hasta tamaño - 1 en lugar de 1 hasta tamaño.
+• Tamaño dinámico. Puedes pedirle al usuario el tamaño antes de crear el arreglo usando una variable, por ejemplo Leer n; Dimension arreglo[n]; (habilitado en perfiles flexibles).

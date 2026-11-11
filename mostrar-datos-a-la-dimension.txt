@@ -1,0 +1,26 @@
+Para mostrar los datos almacenados en una dimensión (arreglo o vector) en PSeInt, se utiliza un ciclo Para combinado con la instrucción Escribir.
+En PSeInt, los índices de las dimensiones comienzan en 1.
+
+Ejemplo de código para mostrar un arreglo unidimensional
+
+pseint
+Algoritmo MostrarDimension
+    Definir num, i como Entero;
+    
+    // 1. Declarar la dimensión con 5 elementos
+    Dimension num[5];
+    
+    // 2. Asignar valores (pueden ser ingresados por el usuario o fijos)
+    num[1] <- 10;
+    num[2] <- 20;
+    num[3] <- 30;
+    num[4] <- 40;
+    num[5] <- 50;
+    
+    // 3. Mostrar los datos de la dimensión usando un ciclo Para
+    Escribir "Los elementos de la dimensión son:";
+    Para i <- 1 Hasta 5 Hacer
+        Escribir "Elemento [", i, "] = ", num[i];
+    FinPara
+    
+FinAlgoritmo
