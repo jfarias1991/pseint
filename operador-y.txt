@@ -1,0 +1,35 @@
+El operador lógico "Y" en PSeInt se utiliza para unir dos condiciones y devuelve Verdadero únicamente cuando ambas condiciones se cumplen al mismo tiempo. Si una o ambas condiciones son falsas, el resultado será Falso.
+
+Formas de escribirlo
+
+En PSeInt puedes representar el operador "Y" de dos maneras:
+• La palabra Y: Se escribe en mayúscula o minúscula (Y o y).
+• El símbolo &: Se utiliza el carácter ampersand (&).
+
+Ejemplo de uso en PSeInt
+
+psc
+Algoritmo EjemploOperadorY
+    Definir nota, asistencia Como Real
+    Escribir "Ingresa tu nota final (de 1 a 7):"
+    Leer nota
+    Escribir "Ingresa tu porcentaje de asistencia (0 a 100):"
+    Leer asistencia
+    
+    // Para aprobar, se deben cumplir AMBAS condiciones
+    Si nota >= 4.0 Y asistencia >= 75 Entonces
+        Escribir "¡Felicidades! Aprobaste la asignatura."
+    Sino
+        Escribir "Reprobaste la asignatura."
+    FinSi
+FinAlgoritmo
+Usa el código con precaución.
+
+Tabla de verdad del operador Y
+
+
+Condición 1	Condición 2	Resultado (Condición 1 Y Condición 2)
+Verdadero	Verdadero	Verdadero
+Verdadero	Falso	Falso
+Falso	Verdadero	Falso
+Falso	Falso	Falso

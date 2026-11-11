@@ -1,0 +1,25 @@
+Para calcular el promedio de 3 calificaciones en PSeInt, puedes utilizar el siguiente código básico:
+pseint
+Algoritmo CalcularPromedio
+    Definir nota1, nota2, nota3, prom Como Real
+    
+    Escribir "Ingrese la primera nota:"
+    Leer nota1
+    
+    Escribir "Ingrese la segunda nota:"
+    Leer nota2
+    
+    Escribir "Ingrese la tercera nota:"
+    Leer nota3
+    
+    prom <- (nota1 + nota2 + nota3) / 3
+    
+    Escribir "El promedio es: ", prom
+FinAlgoritmo
+Usa el código con precaución.
+
+Puntos clave a tener en cuenta:
+
+• Uso de paréntesis: Es obligatorio agrupar la suma con paréntesis (nota1 + nota2 + nota3) antes de dividir entre 3, de lo contrario respetará la jerarquía de operadores y dividirá solo el último número.
+• Tipo de variable: La variable del promedio (prom) debe definirse como Real (y no como Entero) para que el programa muestre los decimales correctamente.
+• Nombre de variable: Evita nombrar a tu variable simplemente promedio a secas, ya que en algunas versiones de PSeInt puede generar conflictos con palabras o funciones reservadas.
