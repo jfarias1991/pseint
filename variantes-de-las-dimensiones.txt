@@ -1,0 +1,45 @@
+En PSeInt, la instrucción Dimension (o Dimensionar) sirve para crear estructuras de datos homogéneas (vectores y matrices). Sus principales variantes y formas de uso se clasifican según el número de dimensiones (o ejes) que utilicen.
+
+1. Dimensiones de 1 grado (Vectores o Arreglos Unidimensionales)
+
+Almacenan una lista secuencial de elementos bajo un mismo identificador.
+• Sintaxis básica:text
+Dimension nombreArreglo(tamaño);
+// O usando corchetes cuadrados según el perfil de PSeInt:
+Dimension nombreArreglo[tamaño];
+Usa el código con precaución.
+• Características:
+	• En PSeInt, por defecto, los índices empiezan en 1 (a diferencia de otros lenguajes como C o Java que empiezan en 0, aunque PSeInt permite configurar la base de los arreglos en sus opciones de perfil).
+	• Ejemplo: Dimension numeros[10]; (crea un vector de 10 casillas: de numeros[1] a numeros[10]).
+
+2. Dimensiones de 2 grados (Matrices o Arreglos Bidimensionales)
+
+Almacenan datos en forma de tabla, organizados en filas y columnas.
+• Sintaxis básica:text
+Dimension nombreMatriz(filas, columnas);
+// O con corchetes:
+Dimension nombreMatriz[filas, columnas];
+Usa el código con precaución.
+• Características:
+	• Se requieren dos índices para acceder a cada celda: primero el de la fila y luego el de la columna.
+	• Ejemplo: Dimension tabla[3, 3]; (crea una matriz de 3 filas por 3 columnas).
+
+3. Dimensiones de orden superior (N-dimensiones)
+
+PSeInt permite definir arreglos con más de dos dimensiones (por ejemplo, 3D para representar cubos o volúmenes de datos).
+• Sintaxis básica:text
+Dimension nombreCubico(dim1, dim2, dim3);
+Usa el código con precaución.
+
+4. Definición múltiple en una sola línea
+
+Puedes declarar varios arreglos (de 1, 2 o más dimensiones) separándolos con una coma (,) en una misma instrucción Dimension:
+text
+Dimension vectorA(5), matrizB(4, 4), vectorC(10);
+Usa el código con precaución.
+
+Reglas importantes al usar dimensiones en PSeInt:
+
+• El tamaño indicado entre paréntesis o corchetes debe ser una expresión numérica entera y positiva (no se puede usar una variable que no haya sido inicializada o leída previamente con un valor fijo).
+• Es obligatorio dimensionar el arreglo antes de utilizarlo o asignarle valores.
+• Todos los datos guardados dentro de la misma dimensión deben ser del mismo tipo (enteros, reales, caracteres o lógicos).

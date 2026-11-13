@@ -1,0 +1,145 @@
+PSeInt es un software educativo diseñado para aprender lógica de programación mediante pseudocódigo en español.
+
+Estructura general de un algoritmo
+
+Todo programa en PSeInt empieza y termina con palabras reservadas:
+psc
+Proceso NombreDelAlgoritmo
+    // Declaración de variables y acciones aquí
+FinProceso
+Usa el código con precaución.
+(También se puede utilizar Algoritmo ... FinAlgoritmo)
+
+Tipos de datos principales
+
+• Numérico: Entero o Real (decimales).
+• Carácter / Cadena: Textos encerrados entre comillas.
+• Lógico (Booleano): Verdadero o Falso.
+
+Instrucciones básicas
+
+
+1. Declaración de variables
+
+Sirve para indicar qué tipo de datos va a almacenar una variable (obligatorio en perfil estricto):
+psc
+Definir nombre_variable Como Caracter;
+Definir edad Como Entero;
+Usa el código con precaución.
+
+2. Asignación
+
+Guarda un valor o el resultado de una expresión dentro de una variable:
+psc
+edad <- 20;
+nombre <- "Ana";
+Usa el código con precaución.
+
+3. Entrada y salida de datos
+
+• Escribir: Muestra un texto o el valor de una variable en la pantalla.
+• Leer: Captura un dato que el usuario escribe mediante el teclado y lo guarda en una variable.
+psc
+Escribir "Por favor, escribe tu nombre:";
+Leer nombre;
+Escribir "Hola ", nombre;
+Usa el código con precaución.
+
+Estructuras de control
+
+
+Condicionales (Si - Entonces)
+
+Evalúan una condición lógica.
+psc
+Si edad >= 18 Entonces
+    Escribir "Eres mayor de edad.";
+Sino
+    Escribir "Eres menor de edad.";
+FinSi
+Usa el código con precaución.
+
+Selección múltiple (Según)
+
+Útil para evaluar múltiples valores de una misma variable:
+psc
+Segun opcion Hacer
+    1:
+        Escribir "Elegiste la opción 1";
+    2:
+        Escribir "Elegiste la opción 2";
+    De Otro Modo:
+        Escribir "Opción no válida";
+FinSegun
+Usa el código con precaución.
+
+Estructuras repetitivas (Bucles)
+
+• Para (casi siempre con contador):psc
+Para i <- 1 Hasta 10 Con Paso 1 Hacer
+    Escribir i;
+FinPara
+Usa el código con precaución.
+• Mientras (evalúa la condición antes de entrar):psc
+Mientras contador < 5 Hacer
+    contador <- contador + 1;
+FinMientras
+Usa el código con precaución.
+• Repetir - Hasta Que (se ejecuta al menos una vez):psc
+Repetir
+    Escribir "Presiona 0 para salir";
+    Leer valor;
+Hasta Que valor = 0
+
+Las instrucciones de PSeInt son palabras reservadas en español que permiten estructurar algoritmos, manipular datos y controlar el flujo de un programa en pseudocódigo. Todas las instrucciones principales se escriben dentro de un bloque que inicia con Algoritmo (o Proceso) y cierra con FinAlgoritmo (o FinProceso).
+
+Estructura y Variables
+
+• Algoritmo / FinAlgoritmo. Delimitan el inicio y el fin de todo programa en PSeInt.
+• Definir. Declara una variable y su tipo de dato (Entero, Real, Caracter o Logico) mediante la sintaxis Definir variable Como Tipo;.
+• Dimension. Crea arreglos o matrices de una o más dimensiones para almacenar múltiples valores bajo un mismo nombre.
+• Asignación (<-). Guarda un valor o el resultado de una operación dentro de una variable.
+• Comentarios (//). Añaden notas explicativas en el código que el programa ignora al ejecutarse.
+
+Entrada y Salida de Datos
+
+• Escribir. Muestra mensajes de texto (entre comillas) o el valor de variables en la pantalla.
+• Leer. Captura un dato ingresado por el usuario desde el teclado y lo almacena en una variable.
+• Limpiar Pantalla / Borrar Pantalla. Elimina el texto mostrado previamente en la consola de ejecución.
+• Esperar. Detiene la ejecución del programa durante un tiempo determinado (Esperar 5 Segundos;) o hasta que el usuario presione una tecla (Esperar Tecla;).
+
+Estructuras Condicionales
+
+• Si - Entonces - Sino - FinSi. Evalúa una expresión lógica y ejecuta un bloque de instrucciones si es verdadera, o un bloque alternativo si es falsa.
+• Segun - Hacer - FinSegun. Permite elegir entre múltiples caminos según el valor exacto de una variable numérica o de carácter, incluyendo la opción De Otro Modo para casos no contemplados.
+
+Estructuras Repetitivas (Ciclos)
+
+• Mientras - Hacer - FinMientras. Repite un bloque de instrucciones mientras una condición se mantenga verdadera. La condición se evalúa antes de iniciar cada vuelta.
+• Repetir - Hasta Que. Ejecuta un bloque de instrucciones al menos una vez y lo repite hasta que la condición final se vuelva verdadera.
+• Para - Hasta - Con Paso - FinPara. Repite un bloque un número conocido de veces utilizando una variable contadora que incrementa o decrementa automáticamente.
+
+Subprocesos y Funciones
+
+• SubProceso / Funcion. Permiten dividir un algoritmo grande en módulos o tareas más pequeñas y reutilizables que pueden recibir parámetros y devolver resultados.
+Puedes revisar la sintaxis oficial y ejemplos detallados en la documentación oficial de PSeInt o en la guía de pseudocódigo de PSeInt en SourceForge.
+
+Ejemplo Práctico
+
+pseint
+Algoritmo CalcularPromedio
+    Definir nota1, nota2, promedio Como Real;
+    
+    Escribir "Ingrese la primera nota:";
+    Leer nota1;
+    Escribir "Ingrese la segunda nota:";
+    Leer nota2;
+    
+    promedio <- (nota1 + nota2) / 2;
+    
+    Si promedio >= 4.0 Entonces
+        Escribir "Aprobado con promedio: ", promedio;
+    Sino
+        Escribir "Reprobado con promedio: ", promedio;
+    FinSi
+FinAlgoritmo

@@ -12,6 +12,7 @@ Algoritmo obtener_promedio
 		Leer calif;
 		
 		acum <- acum + calif;
+		
 	Fin Para
 	
 	prom <- acum / mat;

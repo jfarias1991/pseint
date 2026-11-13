@@ -1,0 +1,23 @@
+Una matriz en PSeInt es una estructura de datos bidimensional (un arreglo de dos dimensiones) que organiza la información en filas y columnas, similar a una tabla.
+Todos los elementos que contiene una matriz deben ser del mismo tipo de dato (números enteros, reales o texto/caracteres).
+
+Cómo se declara
+
+En PSeInt, se utiliza la palabra reservada Dimension indicando el nombre de la matriz, la cantidad de filas y la cantidad de columnas (separadas por una coma):
+psc
+Dimension nombreMatriz[filas, columnas];
+Usa el código con precaución.
+• Ejemplo: Dimension datos[3, 2]; crea una tabla con 3 filas y 2 columnas.
+• Índices: En PSeInt, las posiciones de las filas y columnas comienzan desde el número 1 (a diferencia de otros lenguajes de programación donde empiezan en 0).
+
+Cómo se accede a un elemento
+
+Para leer o modificar un dato en específico, se indica el nombre de la matriz y las coordenadas de su [fila, columna]:
+psc
+datos[1, 2] <- 50;  // Asigna el valor 50 a la fila 1, columna 2
+Escribir datos[1, 2]; // Muestra el valor de esa celda
+Usa el código con precaución.
+
+Cómo se recorre (Doble ciclo Para)
+
+Para llenar, mostrar o procesar todos los datos de una matriz, se utilizan dos bucles Para anidados: uno externo para recorrer las filas y otro interno para recorrer las columnas de cada fila.
