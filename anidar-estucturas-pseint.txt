@@ -1,0 +1,78 @@
+
+anidar estructuras pseint
+
+Anidar estructuras en PSeInt consiste en colocar una estructura de control (condicional o repetitiva) dentro del bloque de código de otra. Esta técnica permite resolver problemas complejos que requieren evaluar múltiples decisiones encadenadas o ejecutar repeticiones en varios niveles, como matrices o tablas.
+
+1. Condicionales anidados (Si-Entonces-SiNo)
+
+Se utilizan cuando una decisión depende del resultado de otra previa. Puedes colocar un bloque Si tanto dentro de la rama verdadera (Entonces) como dentro de la rama falsa (SiNo).
+pseint
+Algoritmo CondicionalAnidado
+    Definir edad Como Entero
+    Definir tieneEntrada Como Logico
+    
+    Escribir "Ingresa tu edad:"
+    Leer edad
+    
+    Si edad >= 18 Entonces
+        Escribir "¿Tienes entrada? (Verdadero/Falso):"
+        Leer tieneEntrada
+        
+        // Estructura Si anidada dentro de la rama verdadera
+        Si tieneEntrada Entonces
+            Escribir "Bienvenido al evento."
+        SiNo
+            Escribir "Debes comprar una entrada en boletería."
+        FinSi
+    SiNo
+        Escribir "Acceso denegado: debes ser mayor de edad."
+    FinSi
+FinAlgoritmo
+Usa el código con precaución.
+
+2. Bucles o ciclos anidados (Para, Mientras, Repetir)
+
+Consiste en meter un ciclo dentro de otro. El ciclo interno se ejecuta por completo en cada una de las vueltas del ciclo externo. Es muy común para generar tablas de multiplicar, patrones de figuras o recorrer arreglos bidimensionales (matrices).
+pseint
+Algoritmo BuclesAnidados
+    Definir i, j Como Entero
+    
+    // Ciclo externo: controla las filas (tablas del 1 al 3)
+    Para i <- 1 Hasta 3 Con Paso 1 Hacer
+        Escribir "--- Tabla del ", i, " ---"
+        
+        // Ciclo interno: controla las columnas (multiplicadores del 1 al 5)
+        Para j <- 1 Hasta 5 Con Paso 1 Hacer
+            Escribir i, " x ", j, " = ", (i * j)
+        FinPara
+    FinPara
+FinAlgoritmo
+Usa el código con precaución.
+
+3. Estructuras mixtas (Ciclos con condicionales)
+
+También es habitual combinar estructuras de distinto tipo, como colocar un Si dentro de un Mientras o un Para para filtrar datos en cada iteración.
+pseint
+Algoritmo MixtoAnidado
+    Definir i, num Como Entero
+    
+    Para i <- 1 Hasta 5 Con Paso 1 Hacer
+        Escribir "Ingresa el número ", i, ":"
+        Leer num
+        
+        // Condicional dentro de un ciclo
+        Si num MOD 2 = 0 Entonces
+            Escribir num, " es par."
+        SiNo
+            Escribir num, " es impar."
+        FinSi
+    FinPara
+FinAlgoritmo
+Usa el código con precaución.
+
+Buenas prácticas al anidar en PSeInt
+
+• Cuida la indentación (sangría). Mantén el código interno desplazado hacia la derecha para identificar visualmente dónde empieza y termina cada bloque. PSeInt ofrece un botón de Corregir indentado en su barra de herramientas.
+• Cierra siempre cada bloque. Verifica que cada Si tenga su FinSi y cada Para su FinPara en el orden inverso en que fueron abiertos.
+• Usa variables distintas en los bucles. Nunca utilices la misma variable contadora (como i) para el ciclo externo y el interno al mismo tiempo, ya que sobrescribirás su valor y provocarás un bucle infinito o errores lógicos.
+• Evita el exceso de niveles. Anidar demasiadas estructuras vuelve el algoritmo difícil de leer y depurar. Si tienes muchas opciones sobre una misma variable, evalúa usar la estructura Segun.

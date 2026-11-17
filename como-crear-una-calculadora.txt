@@ -1,0 +1,104 @@
+Crear una calculadora básica en PSeInt consiste en definir variables, solicitar datos al usuario, mostrar un menú de operaciones y usar una estructura condicional (como Según) para resolver cada cálculo.
+Puedes guiarte con los pasos detallados en la Guía de Programación de Profe Arci o seguir este procedimiento paso a paso:
+
+Paso 1: Abrir PSeInt y declarar las variables
+
+1. Abre PSeInt y crea un Nuevo Algoritmo.
+2. Define las variables que vas a utilizar. Usaremos num1 y num2 para los números, operacion para elegir qué hacer, y resultado para guardar la respuesta.
+psc
+Algoritmo Calculadora
+    Definir num1, num2, resultado Como Real
+    Definir operacion Como Entero
+Usa el código con precaución.
+
+Paso 2: Solicitar los números al usuario
+
+Pídele al usuario que ingrese los dos valores con los que va a operar.
+psc
+    Escribir "Ingresa el primer número: "
+    Leer num1
+    
+    Escribir "Ingresa el segundo número: "
+    Leer num2
+Usa el código con precaución.
+
+Paso 3: Mostrar el menú de opciones
+
+Muestra en pantalla las operaciones disponibles para que el usuario elija una.
+psc
+    Escribir "Selecciona una operación:"
+    Escribir "1. Sumar (+)"
+    Escribir "2. Restar (-)"
+    Escribir "3. Multiplicar (*)"
+    Escribir "4. Dividir (/)"
+    Leer operacion
+Usa el código con precaución.
+
+Paso 4: Evaluar la opción con la estructura Según
+
+Utiliza la estructura condicional Según (o Según-Hacer) para determinar qué cálculo realizar según la opción elegida. Agrega una validación para evitar el error matemático de dividir entre cero.
+psc
+    Según operacion Hacer
+        1:
+            resultado <- num1 + num2
+            Escribir "El resultado de la suma es: ", resultado
+        2:
+            resultado <- num1 - num2
+            Escribir "El resultado de la resta es: ", resultado
+        3:
+            resultado <- num1 * num2
+            Escribir "El resultado de la multiplicación es: ", resultado
+        4:
+            Si num2 = 0 Entonces
+                Escribir "Error: No se puede dividir entre cero."
+            Sino
+                resultado <- num1 / num2
+                Escribir "El resultado de la división es: ", resultado
+            FinSi
+        De Otro Modo:
+            Escribir "Opción no válida."
+    FinSegún
+FinAlgoritmo
+Usa el código con precaución.
+
+Código completo para copiar y pegar
+
+psc
+Algoritmo Calculadora
+    Definir num1, num2, resultado Como Real
+    Definir operacion Como Entero
+    
+    Escribir "Ingresa el primer número: "
+    Leer num1
+    
+    Escribir "Ingresa el segundo número: "
+    Leer num2
+    
+    Escribir "Selecciona una operación:"
+    Escribir "1. Sumar (+)"
+    Escribir "2. Restar (-)"
+    Escribir "3. Multiplicar (*)"
+    Escribir "4. Dividir (/)"
+    Leer operacion
+    
+    Según operacion Hacer
+        1:
+            resultado <- num1 + num2
+            Escribir "El resultado de la suma es: ", resultado
+        2:
+            resultado <- num1 - num2
+            Escribir "El resultado de la resta es: ", resultado
+        3:
+            resultado <- num1 * num2
+            Escribir "El resultado de la multiplicación es: ", resultado
+        4:
+            Si num2 = 0 Entonces
+                Escribir "Error: No se puede dividir entre cero."
+            Sino
+                resultado <- num1 / num2
+                Escribir "El resultado de la división es: ", resultado
+            FinSi
+        De Otro Modo:
+            Escribir "Opción no válida."
+    FinSegún
+FinAlgoritmo
