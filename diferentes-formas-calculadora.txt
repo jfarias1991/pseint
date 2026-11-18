@@ -1,0 +1,168 @@
+Existen varias formas de programar una calculadora en PSeInt, dependiendo de la estructura de control que utilices (condicionales, menús o bucles para repetir el proceso). Aquí te presento las maneras más comunes y prácticas:
+
+1. Calculadora usando la estructura Según (Switch / Case)
+
+Es la forma más ordenada y recomendada cuando trabajas con un menú de opciones numéricas.
+pseint
+Algoritmo CalculadoraSegun
+    Definir num1, num2, resultado Como Real
+    Definir opcion Como Entero
+    
+    Escribir "=== CALCULADORA BÁSICA ==="
+    Escribir "1. Sumar"
+    Escribir "2. Restar"
+    Escribir "3. Multiplicar"
+    Escribir "4. Dividir"
+    Escribir "Elige una opción (1-4): "
+    Leer opcion
+    
+    Escribir "Ingresa el primer número: "
+    Leer num1
+    Escribir "Ingresa el segundo número: "
+    Leer num2
+    
+    Segun opcion Hacer
+        1:
+            resultado <- num1 + num2
+            Escribir "El resultado de la suma es: ", resultado
+        2:
+            resultado <- num1 - num2
+            Escribir "El resultado de la resta es: ", resultado
+        3:
+            resultado <- num1 * num2
+            Escribir "El resultado de la multiplicación es: ", resultado
+        4:
+            Si num2 = 0 Entonces
+                Escribir "Error: No se puede dividir entre cero."
+            SiNo
+                resultado <- num1 / num2
+                Escribir "El resultado de la división es: ", resultado
+            FinSi
+        De Otro Modo:
+            Escribir "Opción no válida."
+    FinSegun
+FinAlgoritmo
+Usa el código con precaución.
+
+2. Calculadora usando Si-Entonces Anidado (If-Else if)
+
+Ideal si prefieres evaluar las condiciones paso a paso con estructuras lógicas tradicionales.
+pseint
+Algoritmo CalculadoraSiAnidado
+    Definir num1, num2, resultado Como Real
+    Definir opcion Como Entero
+    
+    Escribir "1. Suma | 2. Resta | 3. Multiplicación | 4. División"
+    Escribir "Selecciona la operación:"
+    Leer opcion
+    
+    Escribir "Ingresa dos números:"
+    Leer num1, num2
+    
+    Si opcion = 1 Entonces
+        resultado <- num1 + num2
+        Escribir "Resultado: ", resultado
+    SiNo
+        Si opcion = 2 Entonces
+            resultado <- num1 - num2
+            Escribir "Resultado: ", resultado
+        SiNo
+            Si opcion = 3 Entonces
+                resultado <- num1 * num2
+                Escribir "Resultado: ", resultado
+            SiNo
+                Si opcion = 4 Entonces
+                    Si num2 <> 0 Entonces
+                        resultado <- num1 / num2
+                        Escribir "Resultado: ", resultado
+                    SiNo
+                        Escribir "No se puede dividir entre cero."
+                    FinSi
+                SiNo
+                    Escribir "Opción inválida."
+                FinSi
+            FinSi
+        FinSi
+    FinSi
+FinAlgoritmo
+Usa el código con precaución.
+
+3. Calculadora con Símbolos de Operación (Carácter)
+
+En lugar de elegir un número del 1 al 4, el usuario escribe directamente el signo matemático (+, -, *, /).
+pseint
+Algoritmo CalculadoraSimbolos
+    Definir n1, n2, res Como Real
+    Definir oper Como Caracter
+    
+    Escribir "Ingresa el primer número:"
+    Leer n1
+    Escribir "Ingresa la operación (+, -, *, /):"
+    Leer oper
+    Escribir "Ingresa el segundo número:"
+    Leer n2
+    
+    Segun oper Hacer
+        "+":
+            res <- n1 + n2
+            Escribir "Suma: ", res
+        "-":
+            res <- n1 - n2
+            Escribir "Resta: ", res
+        "*":
+            res <- n1 * n2
+            Escribir "Multiplicación: ", res
+        "/":
+            Si n2 <> 0 Then
+                res <- n1 / n2
+                Escribir "División: ", res
+            SiNo
+                Escribir "División por cero no permitida."
+            FinSi
+        De Otro Modo:
+            Escribir "Símbolo de operación no reconocido."
+    FinSegun
+FinAlgoritmo
+Usa el código con precaución.
+
+4. Calculadora con Bucle Repetir / Mientras (Repetitiva)
+
+Permite que la calculadora no se cierre tras una sola operación, sino que le pregunte al usuario si desea realizar otro cálculo.
+pseint
+Algoritmo CalculadoraRepetitiva
+    Definir n1, n2, res Como Real
+    Definir opc Como Entero
+    Definir continuar Como Caracter
+    
+    continuar <- "S"
+    
+    Mientras continuar = "S" O continuar = "s" Hacer
+        Limpiar Pantalla
+        Escribir "=== CALCULADORA CONTINUA ==="
+        Escribir "1(+) | 2(-) | 3(*) | 4(/)"
+        Escribir "Elige opción:"
+        Leer opc
+        
+        Escribir "Escribe num1 y num2:"
+        Leer n1, n2
+        
+        Segun opc Hacer
+            1: Escribir "Resultado: ", n1 + n2
+            2: Escribir "Resultado: ", n1 - n2
+            3: Escribir "Resultado: ", n1 * n2
+            4: 
+                Si n2 = 0 Entonces
+                    Escribir "Error matemático."
+                SiNo
+                    Escribir "Resultado: ", n1 / n2
+                FinSi
+            De Otro Modo:
+                Escribir "Opción inválida."
+        FinSegun
+        
+        Escribir "¿Deseas hacer otra operación? (S/N): "
+        Leer continuar
+    FinMientras
+    
+    Escribir "¡Programa finalizado!"
+FinAlgoritmo
